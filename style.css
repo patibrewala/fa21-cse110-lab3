@@ -55,6 +55,7 @@ footer{
     position: sticky;
     display: block;
 }
+/*flex display example*/
 #flex{
     display: flex;
     flex-direction: row;
@@ -63,6 +64,7 @@ footer{
     justify-content: space-evenly;
     flex-shrink: 30;
 }
+/*grid display example*/
 #grid{
     display: grid;
     grid-column-start: 2;
@@ -72,24 +74,25 @@ footer{
     grid-row-gap: 1px;
 }
 
+/*decendent combinator example*/
 @media screen and (max-width: 600px) {
     section video {
       display: none;
     }
   }
-
+/*child combinator example*/
 @media screen and (max-width: 600px) {
     div > audio {
       display: none;
     }
   }
-
+/*adjacent sibling combinator example*/
 @media screen and (max-width: 600px) {
     h3 + img {
       display: none;
     }
   }
-
+/*general sibiling combinator example*/
 @media screen and (max-width: 600px) {
     hr ~ nav {
       display: none;
