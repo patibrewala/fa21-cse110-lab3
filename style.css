@@ -1,0 +1,101 @@
+.test_class {
+    color: #c527d6;
+}
+h2 {
+    color: rgb(19, 10, 112);
+}
+h1:hover{
+    color:teal;
+}
+#agenda {
+    color: 245°, 87%, 48%;
+    text-decoration: wavy underline teal;
+    margin: auto;
+    max-width: 600vh;
+}
+#subheading{
+    background-color: rgb(182, 195, 238);
+    min-width: 1vw;
+}
+*#border {
+    border-radius: 5cm;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: black;
+    text-align: center;
+}
+a[href="/index.html"]{ 
+    color:rgb(3, 63, 3);
+    margin: 10rem 4rem 40rem 2px;
+}
+div, head {
+    margin-top: 2mm;
+    margin-bottom: 2mm;
+    margin-left: auto;
+    margin-right: auto;
+}
+#padding{
+    padding-top: 2mm;
+    padding-bottom: 2mm;
+    padding-left: 5mm;
+    padding-right: 5mm;
+}
+legend:active{
+    background-color: rgb(240, 138, 138);
+    max-width: 100%;
+}
+head{
+    position: relative;
+    min-width: 1px;
+    display: inline;
+}
+footer{
+    height: 20px;
+    width: 100%;
+    position: sticky;
+    display: block;
+}
+#flex{
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    align-self: auto;
+    justify-content: space-evenly;
+    flex-shrink: 30;
+}
+#grid{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 2/3;
+    grid-column-gap: 5px;
+    grid-row-gap: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    section video {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    div > audio {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    h3 + img {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    hr ~ nav {
+      display: none;
+    }
+  }
+
+head.footer{
+    text-size-adjust: auto;
+}

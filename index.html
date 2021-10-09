@@ -8,21 +8,37 @@
     <meta name="keywords" content="TESC, outreach, meeting notes">
     <title>Outreach 0914 Meeting Minutes</title>
     <link rel="icon" href="hnet.com-image.ico" type="image/ico">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect"href="https://fonts.googleapis.com"><link rel="preconnect"href="https://fonts.gstatic.com"crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap"rel="stylesheet">
 </head>
+<style>
+    body {
+        background-color: rgb(247, 243, 239);
+        font-family: 'Noto Sans Mono';
+    }
+
+    h3 {
+        padding: 20px 2cm 2px 20px;
+    }
+</style>
 
 <body>
 
     <header>
-        <div>
+        <div id="border">
             <h1>Enspire Planning Meeting Minutes</h1>
         </div>
+        <br>
     </header>
 
     <main>
         <div>
-            <strong>Date: September 14 2021</strong>
+            <strong>Date:</strong> September 14 2021
             <br>
-            <i>Time: 12:00:00 pm PST</i>
+            <b>Time:</b> 12:00:00 pm PST
+        </div>
+        <div id="agenda">
             <p><b>Topics coverd:</b> inspiration from similar events by other schools, list of teachers and students
                 interested, topic and merch</p>
             <hr>
@@ -32,7 +48,7 @@
         <h2>About the event</h2>
         <h3> How is our poster looking?</h3>
         <img src="enspire_flyer.png" alt="Poster for the event" width="400">
-        <p> Enspire is head my many schools. Check out thier web pages for inspiration.</p>
+        <p class="test_class"> Enspire is held by many universities. Check out thier web pages for inspiration.</p>
         <ul>
             <li>Stanford University</li>
             <li>Northwestern University</li>
@@ -50,13 +66,15 @@
         <h2>Brainstorming ideas to teach</h2>
         <details>
             <summary> Some topics we could have </summary>
-            <ul>
-                <li>Science: intro to quantum physics, some interactive chem lab, cell division, about physiotherepy
-                </li>
-                <li>Arts: how to make 3d origami pieces, how to paint like a pro, diy with trash, collagin with
-                    magazines</li>
-                <li>Mis: working with diverse group, adulting 101, about the tax system</li>
-            </ul>
+            <div>
+                <ul>
+                    <li>Science: intro to quantum physics, some interactive chem lab, cell division, about physiotherepy
+                    </li>
+                    <li>Arts: how to make 3d origami pieces, how to paint like a pro, diy with trash, collagin with
+                        magazines</li>
+                    <li>Mis: working with diverse group, adulting 101, about the tax system</li>
+                </ul>
+            </div>
         </details>
     </section>
 
@@ -64,11 +82,13 @@
         <h2> Merch </h2>
         <p> Merch will be a good idea. It will help us pay for the event. Talk to Laura about its logistics, and talk to
             design team about merch designs</p>
-        This should be helpful for setting up a store.
-        <br>
-        <audio controls>
-            <source src="audio.mp3" type="audio/mp3">
-        </audio>
+        <div id="padding">
+            This should be helpful for setting up a store.
+            <br>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
     </section>
 
     <section>
@@ -81,25 +101,26 @@
     </section>
 
     <section>
-        <h2>Sample Interest Form for students</h2>
+        <h2 id="subheading" style="text-align:center;">Sample Interest Form for Students</h2>
         <form action="https://httpbin.org/post" method="post" id="interest-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
-            <br>
-            <label for="cdate">Date:</label>
-            <input type="date" id="cdate" name="cdate" value="2021-09-14" min="2018-01-01" max="2022-12-31">
-            <br>
-            <br>
-            <label for="highschool"> Are you in high school?</label><br>
-            <input list="browsers" id="highschool" name="highschool" />
-            <datalist id="browsers">
-                <option value="Yes">
-                <option value="Never went">
-                <option value="Already graduated">
-            </datalist>
-            <br>
-            <br>
-
+            <div id="grid">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <br>
+                <label for="cdate">Date:</label>
+                <input type="date" id="cdate" name="cdate" value="2021-09-14" min="2018-01-01" max="2022-12-31">
+                <br>
+                <br>
+                <label for="highschool"> Are you in high school?</label><br>
+                <input list="browsers" id="highschool" name="highschool" />
+                <datalist id="browsers">
+                    <option value="Yes">
+                    <option value="Never went">
+                    <option value="Already graduated">
+                </datalist>
+                <br>
+                <br>
+            </div>
             <fieldset>
                 <legend>Choose your grade</legend>
 
@@ -127,32 +148,32 @@
             <br>
             <br>
             <p>Choose your interest:</p>
+            <div id="flex">
+                <div>
+                    <input type="checkbox" id="scales" name="scales">
+                    <label for="scales">Computer Science/ Engineering</label>
+                </div>
 
-            <div>
-                <input type="checkbox" id="scales" name="scales">
-                <label for="scales">Computer Science/ Engineering</label>
+                <div>
+                    <input type="checkbox" id="horns" name="horns">
+                    <label for="horns">Electrical engineering</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="ch" name="ch">
+                    <label for="ch">Chemical engineering</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="ce" name="ce">
+                    <label for="ce">Civil engineering</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="o" name="o">
+                    <label for="o">Others</label>
+                </div>
             </div>
-
-            <div>
-                <input type="checkbox" id="horns" name="horns">
-                <label for="horns">Electrical engineering</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="ch" name="ch">
-                <label for="ch">Chemical engineering</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="ce" name="ce">
-                <label for="ce">Civil engineering</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="o" name="o">
-                <label for="o">Others</label>
-            </div>
-
             <br>
             <label>Any comments/ concerns:</label><br>
             <textarea id="text" name="comments" rows="5" cols="33">
@@ -163,9 +184,10 @@
         </form>
         <br>
     </section>
-    <hr>
+    
 
     <footer>
+        <hr>
         <nav>
             <a href="/index.html"> Back to the top</a>
         </nav>
