@@ -11,10 +11,16 @@
 What was done yesterday?
 
 
+
+
 What are you planning on doing today?
 
 
+
+
 Any obstacles?
+
+
 
 
 Any highlights?
